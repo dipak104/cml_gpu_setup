@@ -1,8 +1,8 @@
-name: your-workflow-name
+name: gpu_test
 on: [push]
 jobs:
   run:
-    runs-on: [self-hosted]
+    runs-on: [self-hosted,cml,gpu]
     # optionally use a convenient Ubuntu LTS + DVC + CML image
      #container: docker://dvcorg/cml-py3:latest
     steps:
